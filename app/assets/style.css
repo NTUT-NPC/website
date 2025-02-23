@@ -11,13 +11,13 @@ body {
 
   ul,
   & {
-    display: flex !important;
-    gap: 0.5rem !important;
-    padding: 0 !important;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0;
     > li {
-      display: flex !important;
-      align-items: center !important;
-      list-style: none !important;
+      display: flex;
+      align-items: center;
+      list-style: none;
 
       &:hover {
         cursor: pointer !important;
@@ -28,41 +28,44 @@ body {
 
   button,
   a {
-    all: unset !important;
-    display: inline-block !important;
-    padding: 0.5rem !important;
+    all: unset;
+    display: flex;
+    padding: 0.5rem;
     color: white !important;
+    & > svg {
+      height: 3rem;
+    }
   }
 }
 
 #header {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  height: 4rem !important;
-  padding: 0.5rem 2rem !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  padding: 0.5rem 2rem;
 
   > * {
-    flex: 1 !important;
-    display: flex !important;
-    align-items: center !important;
+    flex: 1;
+    display: flex;
+    align-items: center;
   }
 
   > .left img {
-    height: 2rem !important;
+    height: 2rem;
   }
 
   > .center {
-    justify-content: center !important;
+    justify-content: center;
 
     .router-link-active {
-      text-decoration: underline !important;
-      text-underline-offset: 0.5rem !important;
+      text-decoration: underline;
+      text-underline-offset: 0.5rem;
     }
   }
 
   > .right {
-    justify-content: flex-end !important;
+    justify-content: flex-end;
   }
 }
 

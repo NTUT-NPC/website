@@ -106,6 +106,7 @@ textarea {
   padding: 2rem;
   margin: auto;
   border-radius: 8px;
+  width: 100%;
   /* max-width: 800px; */
   background-color: var(--box-background-color);
   box-shadow: var(--box-shadow-color);
