@@ -41,7 +41,8 @@
         <img
           alt=""
           class="project-image"
-          src="https://www.torproject.org/static/images/download/svg/stay-safe.svg?h=f11bdbfa"
+          src="assets/npc-horizontal.svg"
+          style="background-color: black; object-fit: contain;"
         >
         <div class="project-description">
           <h3>
@@ -60,8 +61,6 @@
             </strong>
           </button></a>
         </div>
-      </div>
-      <div class="download-badge">
         <p>💰 好吃的古早味社課，每次只要 50 元，歡迎來看看！</p>
       </div>
     </div>
@@ -72,7 +71,8 @@
         <img
           alt=""
           class="project-image"
-          src="assets/t-shirt.jpg"
+          src="assets/t-shirt.png"
+          style="background-color: white; object-fit: contain;"
         >
         <div class="project-description">
           <h3>

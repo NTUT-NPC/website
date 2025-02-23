@@ -5,7 +5,6 @@
       <h2>TAT - 北科生活</h2>
       <div class="project-content">
         <img
-          alt="北科生活"
           class="project-image"
           src="https://i.imgur.com/pMSmPA8.webp"
         >
