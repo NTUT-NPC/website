@@ -8,6 +8,8 @@ import IconMoon from '~icons/mingcute/moon-fill'
 
 import 'assets/reset.css'
 import 'assets/cubic-11.css'
+import 'assets/style.css'
+import 'assets/global.css'
 
 useHead({
   title: '北科程式設計研究社',
@@ -25,6 +27,7 @@ const toggleDark = useToggle(isDark)
 const routes = {
   '/': '關於',
   '/projects': '專案',
+  '/join': '加入我們',
 }
 
 const breakpoints = useBreakpoints(breakpointsSematic)
@@ -135,117 +138,3 @@ const [mobileMenuOpen, toggleMobileMenu] = useToggle(false)
 
   <NuxtPage />
 </template>
-
-<style lang="postcss">
-body {
-  font-family: 'Cubic 11';
-}
-
-#header,
-#header-mobile-menu {
-  background-color: #333;
-  color: white;
-
-  ul,
-  & {
-    display: flex;
-    gap: 0.5rem;
-    padding: 0;
-    > li {
-      display: flex;
-      align-items: center;
-      list-style: none;
-
-      &:hover {
-        cursor: pointer;
-        background-color: #fff3;
-      }
-    }
-  }
-
-  button,
-  a {
-    all: unset;
-    display: inline-block;
-    padding: 0.5rem;
-  }
-}
-
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4rem;
-  padding: 0.5rem 2rem;
-
-  > * {
-    flex: 1;
-    display: flex;
-    align-items: center;
-  }
-
-  > .left img {
-    height: 2rem;
-  }
-
-  > .center {
-    justify-content: center;
-
-    .router-link-active {
-      text-decoration: underline;
-      text-underline-offset: 0.5rem;
-    }
-  }
-
-  > .right {
-    justify-content: flex-end;
-  }
-}
-
-.menu-enter-from,
-.menu-leave-to {
-  opacity: 0;
-  transform: translateY(-1rem);
-}
-
-#header-mobile-menu {
-  position: absolute;
-  inset: 4rem 0 0 0;
-  display: flex;
-  flex-direction: column;
-  padding: 1.5rem;
-  gap: 1.5rem;
-  font-size: 2rem;
-  transition: all 0.4s ease;
-
-  li {
-    display: flex;
-    align-items: center;
-
-    > * {
-      all: unset;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.25rem 0.5rem;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .mobile-menu-route {
-    &::before {
-      content: '◆';
-      display: inline-block;
-      visibility: hidden;
-    }
-    &.router-link-active::before {
-      visibility: visible;
-    }
-  }
-
-  .separator {
-    border-top: calc(1em / 11) solid darkgray;
-  }
-}
-</style>
