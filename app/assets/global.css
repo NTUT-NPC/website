@@ -127,7 +127,7 @@ textarea {
     height: 300px; /* Set height to match width for a square image */
     object-fit: cover; /* Ensure the image covers the area without distortion */
     border-radius: 8px;
-    box-shadow: rgba(131, 131, 131, 0.479) 1px 1px 40px;
+    /* box-shadow: rgba(131, 131, 131, 0.479) 1px 1px 40px; */
   }
 
   .project-description {

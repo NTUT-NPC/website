@@ -53,11 +53,24 @@ export default {
           >
         </a>
       </div>
-      <div class="qr-container" />
-      <a
-        href="#tat-qr"
-        @click="toggleQR"
-      >顯示 QR 碼</a>
+      <label @click="toggleQR">顯示 QR 碼</label>
+    </div>
+
+    <div class="npc-box">
+      <h2>Shorts - 短褲</h2>
+      <div class="project-content">
+        <img
+          class="project-image"
+          src="https://github.com/NTUT-NPC/shorts/raw/main/docs/shorts.svg"
+        >
+        <div class="project-description">
+          <h3>一個極簡的短網址伺服器 </h3>
+          <p>用一個檔案定義短連結，提供統計數據</p>
+          <a href="https://github.com/NTUT-NPC/shorts/">
+            <button>原始碼</button>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
