@@ -15,16 +15,18 @@
           <ul>
             <li>獨家社服一件，展現您的團隊精神！</li>
             <li>精彩的社課，提升您的技能與知識！</li>
+            <li>永久社員資格，一次繳費，終身受用！</li>
           </ul>
           <br>
           <p>💰 社費僅需 500 元，讓您享受所有會員專屬福利！</p>
           <p>📢 建議加入我們的 Discord 群組，隨時掌握最新消息與活動資訊，與其他會員互動交流！</p>
           <p>快來加入我們的大家庭，一起創造美好的回憶！💖</p>
           <p>有興趣的朋友請點擊下方 Discord 連結，或透過 Email 聯絡我們！</p>
+          <p>歡迎來社課或社辦繳費</p>
         </div>
       </div>
       <div class="download-badge">
-        <a href="https://to.ntut.club/discord"><button>
+        <a href="https://to.ntut.club/discord"><button class="btn-discord">
           <strong>
             加入 Discord
           </strong>
@@ -55,7 +57,7 @@
             <li>了解更多社團活動！</li>
           </ul>
           <br>
-          <a href="https://to.ntut.club/discord"><button>
+          <a href="https://to.ntut.club/discord"><button class="btn-discord">
             <strong>
               加入 Discord
             </strong>
@@ -80,16 +82,21 @@
           </h3>
           <p>購買社服，您將獲得社員的所有權利</p>
           <br>
-          <a href="https://to.ntut.club/discord"><button>
-            <strong>
-              聯絡銷售團隊
-            </strong>
-          </button></a>
+          <div class="project-content">
+            <a href="https://to.ntut.club/discord"><button>
+              <strong>
+                聯絡銷售團隊
+              </strong>
+            </button></a>
+            <a href="store"><button>
+              查看商品頁面
+            </button></a>
+            <br>
+            <h5>網友留言：已購買，小孩愛穿</h5>
+            <p>💰 好穿的古早味社服，每件只要 500 元，歡迎穿看看！</p>
+          </div>
           <br>
-          <br>
-          <h5>網友留言：已購買，小孩愛穿</h5>
         </div>
-        <p>💰 好穿的古早味社服，每件只要 500 元，歡迎穿看看！</p>
       </div>
     </div>
     <div class="download-badge" />

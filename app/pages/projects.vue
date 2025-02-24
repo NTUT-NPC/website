@@ -1,3 +1,18 @@
+<script>
+export default {
+  data() {
+    return {
+      showQR: false,
+    }
+  },
+  methods: {
+    toggleQR() {
+      this.showQR = !this.showQR
+    },
+  },
+}
+</script>
+
 <template>
   <div class="npc-paragraph">
     <h1>專案</h1>
@@ -5,8 +20,15 @@
       <h2>TAT - 北科生活</h2>
       <div class="project-content">
         <img
+          v-if="!showQR"
           class="project-image"
           src="https://i.imgur.com/pMSmPA8.webp"
+        >
+        <img
+          v-if="showQR"
+          id="tat-qr"
+          class="project-image .fade-enter-active"
+          src="https://files.ntut.club/projects/tat/qrcode.png"
         >
         <div class="project-description">
           <p>方便，簡潔，快速，強大，豐富您的北科生活！</p>
@@ -31,8 +53,11 @@
           >
         </a>
       </div>
-      <!-- <a href="https://to.ntut.club/tat">顯示 QR 碼</a>
-      <img src="https://files.ntut.club/projects/tat/qrcode.png" style="display: none;"> -->
+      <div class="qr-container" />
+      <a
+        href="#tat-qr"
+        @click="toggleQR"
+      >顯示 QR 碼</a>
     </div>
   </div>
 </template>
