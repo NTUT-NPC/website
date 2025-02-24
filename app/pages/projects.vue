@@ -21,13 +21,13 @@ export default {
       <div class="project-content">
         <img
           v-if="!showQR"
-          class="project-image"
+          class="project-image image-shadow"
           src="https://i.imgur.com/pMSmPA8.webp"
         >
         <img
           v-if="showQR"
           id="tat-qr"
-          class="project-image .fade-enter-active"
+          class="project-image image-shadow"
           src="https://files.ntut.club/projects/tat/qrcode.png"
         >
         <div class="project-description">
