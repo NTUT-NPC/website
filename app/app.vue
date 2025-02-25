@@ -25,7 +25,7 @@ const toggleDark = useToggle(isDark)
 
 const routes = {
   '/': '關於',
-  '/projects/': '專案',
+  '/projects': '專案',
   '/join': '加入我們',
   '/contact': '聯絡資訊',
 }

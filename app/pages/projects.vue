@@ -21,13 +21,13 @@ export default {
       <div class="project-content">
         <img
           v-if="!showQR"
-          class="project-image image-shadow"
+          class="project-image shadow"
           src="https://i.imgur.com/pMSmPA8.webp"
         >
         <img
           v-if="showQR"
           id="tat-qr"
-          class="project-image image-shadow"
+          class="project-image shadow"
           src="https://files.ntut.club/projects/tat/qrcode.png"
         >
         <div class="project-description">
@@ -74,3 +74,20 @@ export default {
     </div>
   </div>
 </template>
+
+<style scoped>
+.download-badge {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  img {
+    height: 50px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+</style>

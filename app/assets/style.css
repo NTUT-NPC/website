@@ -33,7 +33,7 @@ h1,
 h2,
 h3 {
   color: var(--heading-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 h1 {
@@ -98,62 +98,35 @@ button {
   margin: auto;
   border-radius: 8px;
   width: 100%;
-  /* max-width: 800px; */
   background-color: var(--box-background-color);
   box-shadow: var(--box-shadow-color);
 
   .project-content {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping of items */
+    flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
   }
 
   .project-image {
     width: 100%;
-    max-width: 300px; /* Set maximum width */
-    height: 300px; /* Set height to match width for a square image */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
+    min-width: 200px;
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
     border-radius: 8px;
   }
 
-  .image-shadow {
-    box-shadow: rgba(131, 131, 131, 0.479) 1px 1px 40px;
-  }
-
   .project-description {
-    flex: 1; /* Allow the description to take up remaining space */
-    min-width: 200px; /* Ensure it has a minimum width */
+    flex: 1;
+    min-width: 200px;
   }
 
   .project-description p {
-    margin: 0 0 1rem; /* Add margin for spacing between paragraphs */
-  }
-
-  .download-badge {
-    display: flex;
-    justify-content: center; /* Center the badges horizontally */
-    gap: 1rem; /* Space between the badges */
-    margin-top: 2rem; /* Add some margin above and below */
-    flex-wrap: wrap;
-  }
-
-  .download-badge img {
-    height: 50px; /* Set a maximum width for the badges */
-    transition: transform 0.3s; /* Add a transition effect for hover */
-  }
-
-  .download-badge img:hover {
-    transform: scale(1.05); /* Slightly enlarge the badge on hover */
+    margin: 0 0 1rem;
   }
 }
 
-.btn-discord {
-  background-color: #0071e3;
-  color: white;
-
-  &:hover {
-    background-color: #692ae6;
-    color: white;
-  }
+.shadow {
+  box-shadow: rgba(131, 131, 131, 0.479) 1px 1px 40px;
 }

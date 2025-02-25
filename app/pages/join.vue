@@ -5,7 +5,6 @@
       <h2>社員</h2>
       <div class="project-content">
         <img
-          alt=""
           class="project-image"
           src="https://i.imgur.com/rkobsqy.webp"
         >
@@ -25,15 +24,15 @@
           <p>歡迎來社課或社辦繳費</p>
         </div>
       </div>
-      <div class="download-badge">
-        <a href="https://to.ntut.club/discord"><button class="btn-discord">
-          <strong>
-            加入 Discord
-          </strong>
-        </button></a>
-        <a href="mailto:contact@ntut.club"><button>
-          Email
-        </button></a>
+      <div class="join-button-container">
+        <a href="https://to.ntut.club/discord">
+          <button class="btn-discord">
+            <strong>加入 Discord</strong>
+          </button>
+        </a>
+        <a href="mailto:contact@ntut.club">
+          <button>Email</button>
+        </a>
       </div>
     </div>
 
@@ -91,14 +90,41 @@
             <a href="store"><button>
               查看商品頁面
             </button></a>
-            <br>
-            <h5>網友留言：已購買，小孩愛穿</h5>
-            <p>💰 好穿的古早味社服，每件只要 500 元，歡迎穿看看！</p>
           </div>
+          <br>
+          <h5>網友留言：已購買，小孩愛穿</h5>
+          <br>
+          <p>💰 好穿的古早味社服，每件只要 500 元，歡迎穿看看！</p>
           <br>
         </div>
       </div>
     </div>
-    <div class="download-badge" />
   </div>
 </template>
+
+<style scoped>
+.join-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  img {
+    height: 50px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.btn-discord {
+  background-color: #0071e3;
+  color: white;
+
+  &:hover {
+    background-color: #692ae6;
+    color: white;
+  }
+}
+</style>
