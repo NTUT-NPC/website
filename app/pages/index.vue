@@ -24,8 +24,8 @@
       </ul>
     </div>
 
-    <a href="/join">
-      <button>加入我們</button>
-    </a>
+    <button @click="$router.push('/join')">
+      加入我們
+    </button>
   </div>
 </template>

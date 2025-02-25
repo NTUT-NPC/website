@@ -67,7 +67,7 @@ export default {
           <h3>一個極簡的短網址伺服器 </h3>
           <p>用一個檔案定義短連結，提供統計數據</p>
           <a href="https://github.com/NTUT-NPC/shorts/">
-            <button>原始碼</button>
+            原始碼
           </a>
         </div>
       </div>
