@@ -6,7 +6,7 @@
       <div class="project-content">
         <img
           class="project-image"
-          src="https://i.imgur.com/rkobsqy.webp"
+          src="assets/join-img/npc.webp"
         >
         <div class="project-description">
           <h3>🌟 加入我們的社團吧！🌟</h3>

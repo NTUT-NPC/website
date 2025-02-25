@@ -22,13 +22,15 @@ export default {
         <img
           v-if="!showQR"
           class="project-image shadow"
-          src="https://i.imgur.com/pMSmPA8.webp"
+          src="assets/projects-img/tat.webp"
+          @click="toggleQR"
         >
         <img
           v-if="showQR"
           id="tat-qr"
           class="project-image shadow"
           src="https://files.ntut.club/projects/tat/qrcode.png"
+          @click="toggleQR"
         >
         <div class="project-description">
           <p>方便，簡潔，快速，強大，豐富您的北科生活！</p>
@@ -61,7 +63,7 @@ export default {
       <div class="project-content">
         <img
           class="project-image"
-          src="https://github.com/NTUT-NPC/shorts/raw/main/docs/shorts.svg"
+          src="assets/projects-img/shorts.svg"
         >
         <div class="project-description">
           <h3>一個極簡的短網址伺服器 </h3>
@@ -88,6 +90,13 @@ export default {
     &:hover {
       transform: scale(1.05);
     }
+  }
+}
+
+img {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
   }
 }
 </style>
