@@ -73,7 +73,7 @@
         <img
           alt=""
           class="project-image"
-          src="assets/t-shirt.png"
+          src="assets/join-img/t-shirt.png"
           style="background-color: white; object-fit: contain;"
         >
         <div class="project-description">

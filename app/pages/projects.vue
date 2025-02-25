@@ -43,13 +43,13 @@ export default {
         <a href="https://to.ntut.club/tat/ios">
           <img
             alt="Download on the App Store"
-            src="assets/Download_on_the_App_Store_Badge_CNTC_RGB_blk_100217.svg"
+            src="assets/projects-img/Download_on_the_App_Store_Badge_CNTC_RGB_blk_100217.svg"
           >
         </a>
         <a href="https://to.ntut.club/tat/android">
           <img
             alt="Get it on Google Play"
-            src="assets/GetItOnGooglePlay_Badge_Web_color_Chinese-TW.png"
+            src="assets/projects-img/GetItOnGooglePlay_Badge_Web_color_Chinese-TW.png"
           >
         </a>
       </div>

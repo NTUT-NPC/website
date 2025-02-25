@@ -35,7 +35,7 @@ export default {
     <img
       alt="T-Shirt Image"
       class="product-image"
-      src="assets/t-shirt.png"
+      src="assets/projects-img/t-shirt.png"
     >
     <p class="description">
       This is a high-quality, comfortable t-shirt perfect for any occasion. Order now!
