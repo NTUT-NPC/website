@@ -15,7 +15,7 @@ export default {
 
 <template>
   <div class="npc-paragraph">
-    <h1>專案</h1>
+    <!-- <h1>專案</h1> -->
     <div class="npc-box">
       <h2>TAT - 北科生活</h2>
       <div class="project-content">

@@ -1,6 +1,6 @@
 <template>
   <div class="npc-paragraph">
-    <h1>加入社團</h1>
+    <!-- <h1>加入社團</h1> -->
     <div class="npc-box">
       <h2>社員</h2>
       <div class="project-content">
