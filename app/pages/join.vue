@@ -6,7 +6,8 @@
       <div class="project-content">
         <img
           class="project-image"
-          src="assets/join-img/npc.webp"
+          src="assets/img/t-shirt.png"
+          style="object-fit: contain;"
         >
         <div class="project-description">
           <h3>🌟 加入我們的社團吧！🌟</h3>
@@ -42,8 +43,8 @@
         <img
           alt=""
           class="project-image"
-          src="assets/npc-horizontal.svg"
-          style="background-color: black; object-fit: contain;"
+          src="assets/img/discord-mark-blue.svg"
+          style="background-color: transparent; object-fit: contain;"
         >
         <div class="project-description">
           <h3>
@@ -66,13 +67,16 @@
       </div>
     </div>
 
-    <div class="npc-box">
+    <div
+      v-if="0"
+      class="npc-box"
+    >
       <h2>僅購買社服</h2>
       <div class="project-content">
         <img
           alt=""
           class="project-image"
-          src="assets/join-img/t-shirt.png"
+          src="assets/img/t-shirt.png"
           style="background-color: white; object-fit: contain;"
         >
         <div class="project-description">

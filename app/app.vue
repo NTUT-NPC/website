@@ -42,7 +42,7 @@ const [mobileMenuOpen, toggleMobileMenu] = useToggle(false)
   <header id="header">
     <div class="left">
       <a href="/">
-        <img src="assets/npc-horizontal.svg">
+        <img src="assets/img/npc-horizontal.svg">
       </a>
     </div>
 
