@@ -2,12 +2,18 @@
 export default {
   data() {
     return {
-      showQR: false,
+      qrStates: {
+        shorts: true,
+        tat: false,
+      },
     }
   },
   methods: {
-    toggleQR() {
-      this.showQR = !this.showQR
+    toggleQR(type) {
+      this.qrStates[type] = !this.qrStates[type]
+    },
+    showQR(type) {
+      return this.qrStates[type]
     },
   },
 }
@@ -20,17 +26,16 @@ export default {
       <h2>TAT - 北科生活</h2>
       <div class="project-content">
         <img
-          v-if="!showQR"
+          v-if="!showQR('tat')"
           class="project-image shadow"
-          src="assets/projects-img/tat.webp"
-          @click="toggleQR"
+          src="assets/img/tat.webp"
+          @click="toggleQR('tat')"
         >
         <img
-          v-if="showQR"
-          id="tat-qr"
+          v-else
           class="project-image shadow"
-          src="https://files.ntut.club/projects/tat/qrcode.png"
-          @click="toggleQR"
+          src="assets/img/tat_qrcode.png"
+          @click="toggleQR('tat')"
         >
         <div class="project-description">
           <p>方便，簡潔，快速，強大，豐富您的北科生活！</p>
@@ -45,25 +50,36 @@ export default {
         <a href="https://to.ntut.club/tat/ios">
           <img
             alt="Download on the App Store"
-            src="assets/projects-img/Download_on_the_App_Store_Badge_CNTC_RGB_blk_100217.svg"
+            src="assets/img/app_store.webp"
           >
         </a>
         <a href="https://to.ntut.club/tat/android">
           <img
             alt="Get it on Google Play"
-            src="assets/projects-img/GetItOnGooglePlay_Badge_Web_color_Chinese-TW.png"
+            src="assets/img/play_store.webp"
           >
         </a>
       </div>
-      <label @click="toggleQR">顯示 QR 碼</label>
+      <label
+        v-if="0"
+        @click="toggleQR"
+      >顯示 QR 碼</label>
     </div>
 
     <div class="npc-box">
       <h2>Shorts - 短褲</h2>
       <div class="project-content">
         <img
-          class="project-image"
-          src="assets/projects-img/shorts.svg"
+          v-if="!showQR('shorts')"
+          class="project-image shadow"
+          src="assets/img/shorts.svg"
+          @click="toggleQR('shorts')"
+        >
+        <img
+          v-else
+          class="project-image shadow"
+          src="assets/img/shorts_qrcode.png"
+          @click="toggleQR('shorts')"
         >
         <div class="project-description">
           <h3>一個極簡的短網址伺服器 </h3>
@@ -97,6 +113,7 @@ img {
   transition: transform 0.3s ease;
   &:hover {
     transform: scale(1.05);
+    cursor: pointer;
   }
 }
 </style>
