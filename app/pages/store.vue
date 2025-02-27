@@ -1,31 +1,25 @@
-<script>
-export default {
-  name: 'StoreFront',
-  data() {
-    return {
-      selectedSize: 'M', // default size
-    }
-  },
-  methods: {
-    sendEmail() {
-      // Configure your email details.
-      const recipient = 'sales@example.com'
-      const subject = `T-Shirt Order Request (${this.selectedSize})`
-      // Use CRLF (%0D%0A) for new lines in the encoded body.
-      const bodyLines = [
-        'Hello,',
-        '',
-        `I would like to order the awesome t-shirt in size ${this.selectedSize}.`,
-        '',
-        'Thank you!',
-      ]
-      const body = bodyLines.join('%0D%0A')
+<script setup lang="ts">
+import { ref } from 'vue'
 
-      const mailtoURL = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${body}`
+const selectedSize = ref('M') // default size
 
-      window.location.href = mailtoURL
-    },
-  },
+function sendEmail() {
+  // Configure your email details.
+  const recipient = 'sales@example.com'
+  const subject = `T-Shirt Order Request (${selectedSize.value})`
+  // Use CRLF (%0D%0A) for new lines in the encoded body.
+  const bodyLines = [
+    'Hello,',
+    '',
+    `I would like to order the awesome t-shirt in size ${selectedSize.value}.`,
+    '',
+    'Thank you!',
+  ]
+  const body = bodyLines.join('%0D%0A')
+
+  const mailtoURL = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${body}`
+
+  window.location.href = mailtoURL
 }
 </script>
 

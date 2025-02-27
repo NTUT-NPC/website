@@ -1,21 +1,22 @@
-<script>
-export default {
-  data() {
-    return {
-      qrStates: {
-        shorts: true,
-        tat: false,
-      },
-    }
-  },
-  methods: {
-    toggleQR(type) {
-      this.qrStates[type] = !this.qrStates[type]
-    },
-    showQR(type) {
-      return this.qrStates[type]
-    },
-  },
+<script setup lang="ts">
+import { ref } from 'vue'
+
+interface QRStates {
+  shorts: boolean
+  tat: boolean
+}
+
+const qrStates = ref<QRStates>({
+  shorts: true,
+  tat: false,
+})
+
+function toggleQR(type: keyof QRStates) {
+  qrStates.value[type] = !qrStates.value[type]
+}
+
+function showQR(type: keyof QRStates) {
+  return qrStates.value[type]
 }
 </script>
 
