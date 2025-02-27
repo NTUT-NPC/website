@@ -9,7 +9,10 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare && test -z $GITHUB_ACTIONS && simple-git-hooks || true"
+    "postinstall": "nuxt prepare && test -z $GITHUB_ACTIONS && simple-git-hooks || true",
+    "lint": "eslint --max-warnings 0",
+    "lint:fix": "eslint --fix --max-warnings 0",
+    "type-check": "nuxt typecheck"
   },
   "dependencies": {
     "@iconify-json/mingcute": "1.2.0",
