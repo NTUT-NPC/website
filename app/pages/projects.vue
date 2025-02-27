@@ -30,7 +30,7 @@ function toggleQR(type: keyof QRStates) {
         >
         <img
           v-else
-          class="project-image shadow"
+          class="project-image"
           src="assets/img/tat_qr_code.svg"
           @click="toggleQR('tat')"
         >
@@ -70,7 +70,7 @@ function toggleQR(type: keyof QRStates) {
         >
         <img
           v-else
-          class="project-image shadow"
+          class="project-image"
           src="assets/img/shorts_qr_code.svg "
           @click="toggleQR('shorts')"
         >
