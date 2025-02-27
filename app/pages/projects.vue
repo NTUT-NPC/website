@@ -31,7 +31,7 @@ function toggleQR(type: keyof QRStates) {
         <img
           v-else
           class="project-image shadow"
-          src="assets/img/tat_qrcode.png"
+          src="assets/img/tat_qrcode.svg"
           @click="toggleQR('tat')"
         >
         <div class="project-description">
@@ -47,13 +47,13 @@ function toggleQR(type: keyof QRStates) {
         <a href="https://to.ntut.club/tat/ios">
           <img
             alt="Download on the App Store"
-            src="assets/img/app_store.webp"
+            src="assets/img/app_store.svg"
           >
         </a>
         <a href="https://to.ntut.club/tat/android">
           <img
             alt="Get it on Google Play"
-            src="assets/img/play_store.webp"
+            src="assets/img/google_play.svg"
           >
         </a>
       </div>
@@ -71,7 +71,7 @@ function toggleQR(type: keyof QRStates) {
         <img
           v-else
           class="project-image shadow"
-          src="assets/img/shorts_qrcode.png"
+          src="assets/img/shorts_qrcode.svg "
           @click="toggleQR('shorts')"
         >
         <div class="project-description">

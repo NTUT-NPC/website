@@ -43,7 +43,6 @@
         <img
           alt=""
           class="project-image"
-          src="assets/img/discord-mark-blue.svg"
           style="background-color: transparent; object-fit: contain;"
         >
         <div class="project-description">
