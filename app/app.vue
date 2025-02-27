@@ -140,10 +140,6 @@ const [mobileMenuOpen, toggleMobileMenu] = useToggle(false)
 </template>
 
 <style>
-body {
-  font-family: 'Cubic 11', 'Iansui', Arial, Helvetica, sans-serif !important;
-}
-
 #header,
 #header-mobile-menu {
   background-color: #333 !important;
@@ -179,6 +175,7 @@ body {
 }
 
 #header {
+  font-family: 'Cubic 11';
   display: flex;
   justify-content: space-between;
   align-items: center;
