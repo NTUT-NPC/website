@@ -11,36 +11,21 @@ const qrStates = ref<QRStates>({
   tat: false,
 })
 
-function toggleQR(type: keyof QRStates) {
-  qrStates.value[type] = !qrStates.value[type]
+function toggleQR(project: keyof QRStates) {
+  qrStates.value[project] = !qrStates.value[project]
 }
 </script>
 
 <template>
   <div class="npc-paragraph">
-    <!-- <h1>專案</h1> -->
     <div class="npc-box">
       <h2>TAT - 北科生活</h2>
       <div class="project-content">
-        <transition
-          mode="out-in"
-          name="image-scale"
+        <img
+          class="project-image"
+          src="assets/img/tat_qr_code.svg"
+          @click="toggleQR('tat')"
         >
-          <img
-            v-if="!qrStates.tat"
-            class="project-image shadow"
-            src="assets/img/tat.webp"
-            @click="toggleQR('tat')"
-          >
-          <img
-            v-else
-            class="project-image"
-            src="assets/img/tat_qr_code.svg"
-            @click="toggleQR('tat')"
-          >
-        </transition>
-        <!--
-      -->
         <div class="project-description">
           <p>方便，簡潔，快速，強大，豐富您的北科生活！</p>
           <p>迅速查詢北科學生課表與行事曆，查看北科 i 學園公告，下載北科 i 學園檔案</p>
@@ -69,23 +54,11 @@ function toggleQR(type: keyof QRStates) {
     <div class="npc-box">
       <h2>Shorts - 短褲</h2>
       <div class="project-content">
-        <transition
-          mode="out-in"
-          name="image-scale"
+        <img
+          class="project-image"
+          src="assets/img/shorts_qr_code.svg "
+          @click="toggleQR('shorts')"
         >
-          <img
-            v-if="!qrStates.shorts"
-            class="project-image shadow"
-            src="assets/img/shorts.svg"
-            @click="toggleQR('shorts')"
-          >
-          <img
-            v-else
-            class="project-image"
-            src="assets/img/shorts_qr_code.svg "
-            @click="toggleQR('shorts')"
-          >
-        </transition>
         <div class="project-description">
           <h3>一個極簡的短網址伺服器 </h3>
           <p>用一個檔案定義短連結，提供統計數據</p>
@@ -112,37 +85,5 @@ function toggleQR(type: keyof QRStates) {
       transform: scale(1.05);
     }
   }
-}
-
-img {
-  transition: transform 0.3s ease;
-  &:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-  }
-}
-
-/* QR Code 的動畫 */
-.image-scale-leave-active {
-  transition:
-    transform 0.5s ease,
-    opacity 0.3s ease;
-}
-.image-scale-leave-to {
-  transform: scale(0);
-  opacity: 0;
-}
-.image-scale-enter-active {
-  transition:
-    transform 0.5s ease,
-    opacity 0.3s ease;
-}
-.image-scale-enter-from {
-  transform: scale(0);
-  opacity: 0;
-}
-.image-scale-enter-to {
-  transform: scale(1.2);
-  opacity: 0.8;
 }
 </style>
