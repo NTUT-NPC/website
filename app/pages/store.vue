@@ -29,7 +29,7 @@ function sendEmail() {
     <img
       alt="T-Shirt Image"
       class="product-image"
-      src="assets/join-img/t-shirt.png"
+      src="assets/img/t-shirt.png"
     >
     <p class="description">
       This is a high-quality, comfortable t-shirt perfect for any occasion. Order now!
