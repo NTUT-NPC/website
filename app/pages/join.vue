@@ -43,6 +43,7 @@
         <img
           alt=""
           class="project-image"
+          src="assets/img/discord_qr_code.svg"
           style="background-color: transparent; object-fit: contain;"
         >
         <div class="project-description">
