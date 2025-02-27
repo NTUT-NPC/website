@@ -31,7 +31,7 @@ function toggleQR(type: keyof QRStates) {
         <img
           v-else
           class="project-image shadow"
-          src="assets/img/tat_qrcode.svg"
+          src="assets/img/tat_qr_code.svg"
           @click="toggleQR('tat')"
         >
         <div class="project-description">
@@ -71,7 +71,7 @@ function toggleQR(type: keyof QRStates) {
         <img
           v-else
           class="project-image shadow"
-          src="assets/img/shorts_qrcode.svg "
+          src="assets/img/shorts_qr_code.svg "
           @click="toggleQR('shorts')"
         >
         <div class="project-description">
