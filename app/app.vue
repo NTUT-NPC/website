@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import 'assets/reset.css'
-import 'assets/cubic-11.css'
-
 import { breakpointsSematic } from '@vueuse/core'
-import IconMoon from '~icons/mingcute/moon-fill'
+import IconClose from '~icons/mingcute/close-fill'
 import IconDiscord from '~icons/mingcute/discord-fill'
 import IconGitHub from '~icons/mingcute/github-fill'
-import IconClose from '~icons/mingcute/close-fill'
 import IconMenu from '~icons/mingcute/menu-fill'
+import IconMoon from '~icons/mingcute/moon-fill'
+
+import 'assets/reset.css'
+import 'assets/cubic-11.css'
 
 useHead({
   title: '北科程式設計研究社',
