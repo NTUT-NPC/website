@@ -14,10 +14,6 @@ const qrStates = ref<QRStates>({
 function toggleQR(type: keyof QRStates) {
   qrStates.value[type] = !qrStates.value[type]
 }
-
-function showQR(type: keyof QRStates) {
-  return qrStates.value[type]
-}
 </script>
 
 <template>
@@ -27,7 +23,7 @@ function showQR(type: keyof QRStates) {
       <h2>TAT - 北科生活</h2>
       <div class="project-content">
         <img
-          v-if="!showQR('tat')"
+          v-if="!qrStates.tat"
           class="project-image shadow"
           src="assets/img/tat.webp"
           @click="toggleQR('tat')"
@@ -61,17 +57,13 @@ function showQR(type: keyof QRStates) {
           >
         </a>
       </div>
-      <label
-        v-if="0"
-        @click="toggleQR"
-      >顯示 QR 碼</label>
     </div>
 
     <div class="npc-box">
       <h2>Shorts - 短褲</h2>
       <div class="project-content">
         <img
-          v-if="!showQR('shorts')"
+          v-if="!qrStates.shorts"
           class="project-image shadow"
           src="assets/img/shorts.svg"
           @click="toggleQR('shorts')"
