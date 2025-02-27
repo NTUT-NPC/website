@@ -7,7 +7,7 @@ interface QRStates {
 }
 
 const qrStates = ref<QRStates>({
-  shorts: true,
+  shorts: false,
   tat: false,
 })
 
