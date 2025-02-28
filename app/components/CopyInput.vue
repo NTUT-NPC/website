@@ -1,6 +1,6 @@
 <!--
   Usage:
-  <CopyInput class="address" value="106 臺北市大安區新生南路一段 3 號（國立臺北科技大學-宏裕科技研究大樓）B4 程式設計研究社"/>
+  <CopyInput value="106 臺北市大安區新生南路一段 3 號（國立臺北科技大學-宏裕科技研究大樓）B4 程式設計研究社"/>
 -->
 
 <script lang="ts">
