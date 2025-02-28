@@ -56,7 +56,7 @@ function toggleQR(project: keyof QRStates) {
       <div class="project-content">
         <img
           class="project-image"
-          src="assets/img/shorts_qr_code.svg "
+          src="assets/img/shorts_qr_code.svg"
           @click="toggleQR('shorts')"
         >
         <div class="project-description">

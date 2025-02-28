@@ -210,7 +210,7 @@ button {
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0 2px 5px var(--shadow-color);
+  box-shadow: 0 2px 5px var(--box-shadow-color);
   transition: background-color 0.3s;
 
   &:hover {
