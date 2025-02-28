@@ -1,5 +1,31 @@
 <template>
-  <div>
-    <h1>About</h1>
+  <div class="npc-paragraph">
+    <h1>關於我們</h1>
+    <div>
+      <p>由一群熱愛程式設計的學生所組成的社團</p>
+      <p>扭轉迷思，提供許多管道給想要學習程式的你！</p>
+    </div>
+
+    <div>
+      <h2>我們的活動</h2>
+      <ul>
+        <li>定期舉辦程式設計課程</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>為什麼加入我們？</h2>
+      <p>加入我們的社團，你將能夠：</p>
+      <ul>
+        <li>與志同道合的朋友建立聯繫</li>
+        <li>獲得實用的程式設計技能</li>
+        <li>參加有趣的活動和挑戰</li>
+        <li>獲得指導和支持，幫助你在程式設計的旅程中成長</li>
+      </ul>
+    </div>
+
+    <button @click="$router.push('/join')">
+      加入我們
+    </button>
   </div>
 </template>

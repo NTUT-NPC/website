@@ -25,6 +25,8 @@ const toggleDark = useToggle(isDark)
 const routes = {
   '/': '關於',
   '/projects': '專案',
+  '/join': '加入我們',
+  '/contact': '聯絡資訊',
 }
 
 const breakpoints = useBreakpoints(breakpointsSematic)
@@ -39,7 +41,7 @@ const [mobileMenuOpen, toggleMobileMenu] = useToggle(false)
   <header id="header">
     <div class="left">
       <a href="/">
-        <img src="assets/npc-horizontal.svg">
+        <img src="assets/img/npc-horizontal.svg">
       </a>
     </div>
 
@@ -136,15 +138,145 @@ const [mobileMenuOpen, toggleMobileMenu] = useToggle(false)
   <NuxtPage />
 </template>
 
-<style lang="postcss">
-body {
-  font-family: 'Cubic 11';
+<style>
+:root {
+  --background-color: #f8f9fa;
+  --text-color: #333333;
+  --heading-color: #000000;
+  --button-background-color: #e4e4e4;
+  --button-hover-background-color: #cccccc;
+  --box-background-color: #ffffff;
+  --box-shadow-color: 0 0 1rem rgba(0, 0, 0, 0.1);
+  --link-color: rgb(0, 115, 255);
+  --link-hover-color: rgb(0, 83, 184);
+}
+
+.dark {
+  --background-color: #222222;
+  --text-color: #e0e0e0;
+  --heading-color: #ffffff;
+  --button-background-color: #444444;
+  --button-hover-background-color: #666666;
+  --box-background-color: #2a2a2a;
+  --box-shadow-color: 0 0 1rem rgba(0, 0, 0, 0.1);
+  --link-color: rgb(0, 221, 255);
+  --link-hover-color: rgb(65, 150, 255);
+}
+
+html {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--heading-color);
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s;
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
+
+button {
+  background-color: var(--button-background-color);
+  color: var(--text-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px var(--box-shadow-color);
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var(--button-hover-background-color);
+  }
+}
+
+.npc-paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0.5rem;
+  margin: auto;
+  /* border-radius: 8px; */
+  max-width: 1000px;
+  & > div {
+    gap: 0;
+  }
+}
+
+.npc-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  margin: auto;
+  border-radius: 8px;
+  width: 100%;
+  background-color: var(--box-background-color);
+  box-shadow: var(--box-shadow-color);
+
+  .project-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .project-image {
+    width: 100%;
+    min-width: 200px;
+    max-width: 300px;
+    max-height: 300px;
+    /* object-fit: cover; */
+    border-radius: 2rem;
+    object-fit: contain;
+  }
+
+  .project-description {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .project-description p {
+    margin: 0 0 1rem;
+  }
+}
+
+.shadow {
+  box-shadow: rgba(131, 131, 131, 0.479) 1px 1px 40px;
 }
 
 #header,
 #header-mobile-menu {
-  background-color: #333;
-  color: white;
+  background-color: #333 !important;
+  /* color: white !important; */
 
   ul,
   & {
@@ -157,8 +289,8 @@ body {
       list-style: none;
 
       &:hover {
-        cursor: pointer;
-        background-color: #fff3;
+        cursor: pointer !important;
+        background-color: #fff3 !important;
       }
     }
   }
@@ -166,12 +298,17 @@ body {
   button,
   a {
     all: unset;
-    display: inline-block;
+    display: flex;
     padding: 0.5rem;
+    color: white !important;
+    & > svg {
+      height: 3rem;
+    }
   }
 }
 
 #header {
+  font-family: 'Cubic 11';
   display: flex;
   justify-content: space-between;
   align-items: center;
