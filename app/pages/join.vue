@@ -21,16 +21,15 @@
           <p>💰 社費僅需 500 元，讓您享受所有會員專屬福利！</p>
           <p>📢 建議加入我們的 Discord 群組，隨時掌握最新消息與活動資訊，與其他會員互動交流！</p>
           <p>快來加入我們的大家庭，一起創造美好的回憶！💖</p>
-          <p>有興趣的朋友請點擊下方 Discord 連結，或透過 Email 聯絡我們！</p>
-          <p>歡迎來社課或社辦繳費</p>
+          <p>有興趣的朋友請點擊下方按鈕填寫表單！</p>
         </div>
       </div>
       <div class="join-button-container">
-        <a href="https://to.ntut.club/discord">
-          <button class="btn-discord">
-            <strong>加入 Discord</strong>
+        <NuxtLink to="/instructions">
+          <button>
+            填寫表單入社
           </button>
-        </a>
+        </NuxtLink>
         <a href="mailto:contact@ntut.club">
           <button>Email</button>
         </a>
