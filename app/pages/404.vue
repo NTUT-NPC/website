@@ -7,7 +7,6 @@
         <li>網址輸入錯誤</li>
         <li>該頁面已被移除或改名</li>
         <li>您在尋找另一個祕密角落？</li>
-        <br>
       </ul>
       <p>不用擔心，讓小N 為您指引方向：</p>
     </div>
@@ -22,6 +21,7 @@
   <img
     alt="小 N 在哭"
     class="np-cat"
+    draggable="false"
     src="assets/img/n.png"
   >
 </template>
@@ -59,5 +59,10 @@
   border-radius: 0.25rem;
   display: block;
   margin-left: auto;
+  transition: 10s;
+}
+
+ul {
+  margin-bottom: 1rem;
 }
 </style>
