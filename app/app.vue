@@ -227,7 +227,7 @@ button {
   max-width: 1000px;
 }
 
-.npc-box {
+.card {
   display: flex;
   flex-direction: column;
   gap: 2rem;

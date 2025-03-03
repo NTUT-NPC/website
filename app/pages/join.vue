@@ -1,7 +1,6 @@
 <template>
   <div class="npc-paragraph">
-    <!-- <h1>加入社團</h1> -->
-    <div class="npc-box">
+    <section class="card">
       <h2>社員</h2>
       <div class="project-content">
         <img
@@ -35,9 +34,9 @@
           <button>Email</button>
         </a>
       </div>
-    </div>
+    </section>
 
-    <div class="npc-box">
+    <section class="card">
       <h2>線上成員</h2>
       <div class="project-content">
         <img
@@ -65,7 +64,7 @@
         </div>
         <p>💰 好吃的古早味社課，每次只要 50 元，歡迎來看看！</p>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
