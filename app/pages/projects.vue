@@ -72,6 +72,31 @@ function toggleQR(project: keyof QRStates) {
 </template>
 
 <style scoped>
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-image {
+  width: 100%;
+  min-width: 200px;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 2rem;
+  object-fit: contain;
+}
+
+.project-description {
+  flex: 1;
+  min-width: 200px;
+}
+
+.project-description p {
+  margin: 0 0 1rem;
+}
+
 .download-badge {
   display: flex;
   justify-content: center;
