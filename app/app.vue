@@ -224,11 +224,7 @@ button {
   gap: 1rem;
   padding: 2rem 0.5rem;
   margin: auto;
-  /* border-radius: 8px; */
   max-width: 1000px;
-  & > div {
-    gap: 0;
-  }
 }
 
 .npc-box {
