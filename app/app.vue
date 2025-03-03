@@ -167,31 +167,46 @@ html {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-}
-
-h1,
-h2,
-h3 {
-  color: var(--heading-color);
-  margin-bottom: 2rem;
 }
 
 h1 {
+  color: var(--heading-color);
+  display: block;
   font-size: 2.5rem;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
 
 h2 {
+  color: var(--heading-color);
+  display: block;
   font-size: 2rem;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
 
 h3 {
-  font-size: 1.75rem;
+  color: var(--heading-color);
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
 
 p {
   color: var(--text-color);
-  margin-bottom: 1rem;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 a {
@@ -200,6 +215,19 @@ a {
   transition: color 0.3s;
   &:hover {
     color: var(--link-hover-color);
+  }
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+  li {
+    display: list-item;
   }
 }
 
