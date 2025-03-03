@@ -1,5 +1,5 @@
 <template>
-  <div class="npc-paragraph">
+  <article class="container">
     <section class="card">
       <h2>社辦位置</h2>
       <p>宏裕科技研究大樓 B4</p>
@@ -29,7 +29,7 @@
         >https://to.ntut.club/discord</a>
       </p>
     </section>
-  </div>
+  </article>
 </template>
 
 <style scoped>

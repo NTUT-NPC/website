@@ -17,7 +17,7 @@ function toggleQR(project: keyof QRStates) {
 </script>
 
 <template>
-  <div class="npc-paragraph">
+  <article class="container">
     <section class="card">
       <h2>TAT - 北科生活</h2>
       <div class="project-content">
@@ -68,7 +68,7 @@ function toggleQR(project: keyof QRStates) {
         </div>
       </div>
     </section>
-  </div>
+  </article>
 </template>
 
 <style scoped>

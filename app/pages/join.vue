@@ -1,5 +1,5 @@
 <template>
-  <div class="npc-paragraph">
+  <article class="container">
     <section class="card">
       <h2>社員</h2>
       <div class="project-content">
@@ -65,7 +65,7 @@
         <p>💰 好吃的古早味社課，每次只要 50 元，歡迎來看看！</p>
       </div>
     </section>
-  </div>
+  </article>
 </template>
 
 <style scoped>

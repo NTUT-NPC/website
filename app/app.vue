@@ -218,7 +218,7 @@ button {
   }
 }
 
-.npc-paragraph {
+.container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
