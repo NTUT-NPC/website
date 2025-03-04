@@ -18,7 +18,7 @@ function normalizePath(fullPath: string): string {
 }
 
 const slug = normalizePath(route.fullPath)
-const fallbackUrl = `${location.protocol}//${location.host}/404`
+const fallbackUrl = `${location.protocol}//${location.host}/not-found?url=${window.location.href}`
 const targetUrl = `https://to.ntut.club/api/try?slug=${slug}&fallback=${fallbackUrl}`
 
 onMounted(() => {

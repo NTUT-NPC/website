@@ -3,7 +3,7 @@
     <h1>哎呀～似乎迷路了！</h1>
     <div class="error-description">
       <p>小N 正在這裡悠哉散步，但您要找的頁面卻不在這裡。可能的原因：</p>
-      <ul style="text-align: left; display: inline-block;">
+      <ul>
         <li>網址輸入錯誤</li>
         <li>該頁面已被移除或改名</li>
         <li>您在尋找另一個祕密角落？</li>
