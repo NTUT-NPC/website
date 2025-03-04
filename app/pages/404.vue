@@ -22,7 +22,7 @@
     alt="小 N 在哭"
     class="np-cat"
     draggable="false"
-    src="assets/img/n.png"
+    src="assets/img/np-cat.webp"
   >
 </template>
 
