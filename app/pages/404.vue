@@ -48,6 +48,7 @@
   bottom: 0;
   max-width: 40dvw;
   max-height: 40dvh;
+  z-index: -1;
 }
 
 .home-button {
