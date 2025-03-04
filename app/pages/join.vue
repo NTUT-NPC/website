@@ -6,7 +6,7 @@
       <div class="project-content">
         <img
           class="project-image"
-          src="assets/img/t-shirt.png"
+          src="assets/img/t-shirt.webp"
           style="object-fit: contain;"
         >
         <div class="project-description">
@@ -64,43 +64,6 @@
           </button></a>
         </div>
         <p>💰 好吃的古早味社課，每次只要 50 元，歡迎來看看！</p>
-      </div>
-    </div>
-
-    <div
-      v-if="0"
-      class="npc-box"
-    >
-      <h2>僅購買社服</h2>
-      <div class="project-content">
-        <img
-          alt=""
-          class="project-image"
-          src="assets/img/t-shirt.png"
-          style="background-color: white; object-fit: contain;"
-        >
-        <div class="project-description">
-          <h3>
-            還在猶豫嗎？不如先買件社服吧！
-          </h3>
-          <p>購買社服，您將獲得社員的所有權利</p>
-          <br>
-          <div class="project-content">
-            <a href="https://to.ntut.club/discord"><button>
-              <strong>
-                聯絡銷售團隊
-              </strong>
-            </button></a>
-            <a href="store"><button>
-              查看商品頁面
-            </button></a>
-          </div>
-          <br>
-          <h5>網友留言：已購買，小孩愛穿</h5>
-          <br>
-          <p>💰 好穿的古早味社服，每件只要 500 元，歡迎穿看看！</p>
-          <br>
-        </div>
       </div>
     </div>
   </div>
