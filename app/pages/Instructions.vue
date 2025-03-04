@@ -1,18 +1,3 @@
-<script>
-export default {
-  data() {
-    return {
-      np_cat_dc_link: 'https://discord.com/users/1171113302739394628',
-    }
-  },
-  computed: {
-    formUrl() {
-      return 'https://docs.google.com/forms/d/e/1FAIpQLSciz2ZVjV-yBNIurfYDtsof0ZSiqwXm0-oQlxZwwdmp6wnF_Q/viewform?usp=pp_url'
-    },
-  },
-}
-</script>
-
 <template>
   <div class="npc-paragraph">
     <div class="npc-box">
