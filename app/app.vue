@@ -173,8 +173,6 @@ h1 {
   color: var(--heading-color);
   display: block;
   font-size: 2.5rem;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
@@ -184,7 +182,6 @@ h2 {
   color: var(--heading-color);
   display: block;
   font-size: 2rem;
-  margin-top: 0.83em;
   margin-bottom: 0.83em;
   margin-left: 0;
   margin-right: 0;
@@ -207,6 +204,7 @@ p {
   display: block;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 1rem;
 }
 
 a {
