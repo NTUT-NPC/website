@@ -14,7 +14,7 @@
               target="_blank"
             >Discord 伺服器</a>，並透過以下幾種方式聯絡我們
           </p>
-          <a
+          <!-- <a
             href="https://to.ntut.club/discord"
             target="_blank"
           >
@@ -37,7 +37,7 @@
               /></svg>
               <strong>北科程式設計研究社</strong>
             </div>
-          </a>
+          </a> -->
           <ul>
             <li>
               <h4>
@@ -52,9 +52,10 @@
             </li>
             <li>
               <h4>
-                Discord 伺服器首頁點選私訊 <DC user-id="1171113302739394628">
-                  @小N
-                </DC>
+                Discord 伺服器首頁點選私訊
+                <!-- <DC user-id="1171113302739394628"> -->
+                @小N
+                <!-- </DC> -->
               </h4>
             </li>
             <li>

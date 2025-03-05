@@ -11,7 +11,7 @@
         >
         <div class="project-description">
           <h3>🌟 加入我們的社團吧！🌟</h3>
-          <p>🎉 成為 <strong>我們的一員</strong>，您將獲得：</p>
+          <p>🎉 成為 <strong>NPC</strong> 的一員，您將獲得：</p>
           <ul>
             <li>獨家社服一件，展現您的團隊精神！</li>
             <li>精彩的社課，提升您的技能與知識！</li>
