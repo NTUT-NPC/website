@@ -15,8 +15,8 @@
         <p>我們鼓勵社員參加讀書會和團隊合作，最終進入專案的開發，讓每個人都能在實踐中學習和成長。</p>
       </div>
       <div class="npc-h-box">
-        <h2>團隊合作</h2>
-        <p>我們鼓勵社員參加讀書會和團隊合作，最終進入專案的開發，讓每個人都能在實踐中學習和成長。</p>
+        <h2>樹莓派！</h2>
+        <p>我們有 7 片樹莓派 5B！！</p>
       </div>
     </div>
   </div>
@@ -30,6 +30,12 @@ h2 {
   text-align: center;
   margin-bottom: 0;
   width: 100%;
+  height: fit-content;
+}
+p {
+  /* text-align: center; */
+  margin-top: 0;
+  height: fit-content;
 }
 button {
   margin-top: 1rem;
@@ -52,5 +58,8 @@ button {
   margin: 0.5rem;
   min-width: 15rem;
   box-shadow: var(--box-shadow-color);
+}
+.rpi {
+  width: 100%;
 }
 </style>

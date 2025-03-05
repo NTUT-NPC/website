@@ -267,32 +267,32 @@ button {
   width: 100%;
   background-color: var(--box-background-color);
   box-shadow: var(--box-shadow-color);
+}
 
-  .project-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-  }
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
 
-  .project-image {
-    width: 100%;
-    min-width: 200px;
-    max-width: 300px;
-    max-height: 300px;
-    /* object-fit: cover; */
-    border-radius: 2rem;
-    object-fit: contain;
-  }
+.project-image {
+  width: 100%;
+  min-width: 200px;
+  max-width: 300px;
+  max-height: 300px;
+  /* object-fit: cover; */
+  border-radius: 2rem;
+  object-fit: contain;
+}
 
-  .project-description {
-    flex: 1;
-    min-width: 200px;
-  }
+.project-description {
+  flex: 1;
+  min-width: 200px;
+}
 
-  .project-description p {
-    margin: 0 0 1rem;
-  }
+.project-description p {
+  margin: 0 0 1rem;
 }
 
 .shadow {
