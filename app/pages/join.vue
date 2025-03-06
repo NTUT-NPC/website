@@ -61,7 +61,6 @@ import FeatureCard from '~/components/FeatureCard.vue'
             加入 Discord
           </strong>
         </button></a>
-        <p>💰 好吃的古早味社課，每次只要 50 元，歡迎來看看！</p>
       </template>
     </FeatureCard>
   </article>
