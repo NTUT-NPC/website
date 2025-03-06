@@ -1,31 +1,65 @@
 <template>
-  <article class="container">
-    <h1>關於我們</h1>
-    <div>
-      <p>由一群熱愛程式設計的學生所組成的社團</p>
-      <p>扭轉迷思，提供許多管道給想要學習程式的你！</p>
+  <section class="container">
+    <h1>北科程式設計研究社</h1>
+    <div class="h-box-container">
+      <div class="npc-h-box">
+        <h2>推廣資訊技術</h2>
+        <p>我們致力於在北科校園推廣資訊技術，開設多種程式語言課程，讓更多人體驗程式的魅力。</p>
+      </div>
+      <div class="npc-h-box">
+        <h2>多樣化活動</h2>
+        <p>每學期我們會舉辦社課、社聚、跨校交流及黑客松等活動，並提供基礎課程幫助初學者快速上手。</p>
+      </div>
+      <div class="npc-h-box">
+        <h2>專案開發</h2>
+        <p>我們鼓勵社員參加讀書會和團隊合作，最終進入專案的開發，讓每個人都能在實踐中學習和成長。</p>
+      </div>
+      <div class="npc-h-box">
+        <h2>樹莓派！</h2>
+        <p>我們有 7 片樹莓派 5B！！</p>
+      </div>
     </div>
-
-    <div>
-      <h2>我們的活動</h2>
-      <ul>
-        <li>定期舉辦程式設計課程</li>
-      </ul>
-    </div>
-
-    <div>
-      <h2>為什麼加入我們？</h2>
-      <p>加入我們的社團，你將能夠：</p>
-      <ul>
-        <li>與志同道合的朋友建立聯繫</li>
-        <li>獲得實用的程式設計技能</li>
-        <li>參加有趣的活動和挑戰</li>
-        <li>獲得指導和支持，幫助你在程式設計的旅程中成長</li>
-      </ul>
-    </div>
-
-    <button @click="$router.push('/join')">
-      加入我們
-    </button>
-  </article>
+  </section>
 </template>
+
+<style scoped>
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 0;
+  width: 100%;
+  height: fit-content;
+}
+p {
+  /* text-align: center; */
+  margin-top: 0;
+  height: fit-content;
+}
+button {
+  margin-top: 1rem;
+}
+.h-box-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.npc-h-box {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--box-background-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  min-width: 15rem;
+  box-shadow: var(--box-shadow-color);
+}
+.rpi {
+  width: 100%;
+}
+</style>
