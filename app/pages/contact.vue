@@ -33,7 +33,7 @@
 </template>
 
 <style scoped>
-  .address {
+.address {
   width: 100%;
   margin: 0;
   color: var(--text-color);
