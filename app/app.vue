@@ -230,7 +230,6 @@ button {
 .card {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   padding: 2rem;
   margin: auto;
   border-radius: 8px;
