@@ -2,15 +2,17 @@
 export default {
   data() {
     return {
-      links: [
+      resourceLinks: [
         { id: 1, name: '社課報名表單', url: 'https://to.ntut.club/latest', icon: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fgoogle-forms_5968528&psig=AOvVaw0VXJqO8bKep-7UveJMTYzV&ust=1741847521463000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCjp-j1g4wDFQAAAAAdAAAAABAE', img: 'https://ugc.production.linktr.ee/874f245f-c690-4c79-9462-21b3ddbafe39_--.png?io=true&size=thumbnail-feature-v1_0' },
         { id: 2, name: 'Discord 伺服器', url: '/discord', icon: 'https://ugc.production.linktr.ee/ae7e80b0-de1d-4df0-ba37-fd1bc26619cf_discord.webp?io=true&size=thumbnail-stack-v1_0' },
         { id: 3, name: 'TAT - 北科生活', url: '/tat', icon: '/_nuxt/assets/img/tat.webp' },
         { id: 4, name: 'Blog', url: '/blog' },
       ],
-      socials: [
-        { id: 1, name: 'Instagram', url: '', icon: '' },
-        { id: 2, name: 'Instagram', url: '', icon: '' },
+      socialMediaLinks: [
+        { id: 1, name: 'Instagram', url: '/ig', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png' },
+        { id: 2, name: 'Instagram', url: '/ig', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png' },
+        { id: 3, name: 'Instagram', url: '/ig', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png' },
+        { id: 4, name: 'Instagram', url: '/ig', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png' },
       ],
     }
   },
@@ -29,43 +31,46 @@ export default {
       <h2>串聯志同道合的人，共創熱愛科技的社群，探索和發展新技能。</h2>
     </div>
     <div
-      v-for="social in socials"
       id="icons-container"
-      :key="social.id"
     >
-      <NuxtLink
-        class="icon"
-        :to="social.url"
+      <div
+        v-for="socialMedia in socialMediaLinks"
+        :key="socialMedia.id"
       >
-        <img
-          :alt="social.name"
-          :src="social.icon"
+        <NuxtLink
+          class="icon"
+          :to="socialMedia.url"
         >
-      </NuxtLink>
+          <img
+            :alt="socialMedia.name"
+            :src="socialMedia.icon"
+          >
+        </NuxtLink>
+      </div>
     </div>
     <div id="links-container">
       <div
-        v-for="link in links"
-        :key="link.id"
+        v-for="resourceLink in resourceLinks"
+        :key="resourceLink.id"
       >
         <NuxtLink
           class="link"
-          :to="link.url"
+          :to="resourceLink.url"
         >
           <div class="text-container">
             <img
-              v-if="!link.img"
+              v-if="!resourceLink.img"
               alt=""
               class="icon"
-              :src="link.icon"
+              :src="resourceLink.icon"
             >
             <h3>
-              {{ link.name }}
+              {{ resourceLink.name }}
             </h3>
           </div>
           <img
             alt=""
-            :src="link.img"
+            :src="resourceLink.img"
           >
         </NuxtLink>
       </div>
@@ -78,10 +83,11 @@ export default {
   max-width: 500px;
 }
 .profile-image {
-  width: 10rem;
-  height: 10rem;
+  width: 6rem;
+  height: 6rem;
   object-fit: cover;
   border-radius: 50%;
+  margin-bottom: 2rem;
 }
 .profile-info {
   display: flex;
@@ -95,6 +101,8 @@ export default {
   h2 {
     font-size: 1rem;
     margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
   }
 }
 .link {
@@ -133,7 +141,19 @@ export default {
   }
 }
 
-.social-icon {
-  list-style: none;
+#icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  img {
+    width: 3rem;
+    object-fit: contain;
+    border-radius: 0.5rem;
+  }
+  a {
+    cursor: pointer;
+  }
 }
 </style>
