@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "@iconify-json/mingcute": "1.2.3",
-    "@vueuse/core": "12.8.2",
-    "@vueuse/nuxt": "12.8.2",
+    "@vueuse/core": "13.3.0",
+    "@vueuse/nuxt": "13.3.0",
     "nuxt": "3.17.5",
     "postcss": "8.5.5",
     "postcss-nesting": "13.0.2",
