@@ -1,5 +1,5 @@
 <template>
-  <div class="npc-paragraph">
+  <article class="container">
     <h1>關於我們</h1>
     <div>
       <p>由一群熱愛程式設計的學生所組成的社團</p>
@@ -27,5 +27,5 @@
     <button @click="$router.push('/join')">
       加入我們
     </button>
-  </div>
+  </article>
 </template>

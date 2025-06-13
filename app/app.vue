@@ -218,55 +218,24 @@ button {
   }
 }
 
-.npc-paragraph {
+.container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 2rem 0.5rem;
   margin: auto;
-  /* border-radius: 8px; */
   max-width: 1000px;
-  & > div {
-    gap: 0;
-  }
 }
 
-.npc-box {
+.card {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   padding: 2rem;
   margin: auto;
   border-radius: 8px;
   width: 100%;
   background-color: var(--box-background-color);
   box-shadow: var(--box-shadow-color);
-
-  .project-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-  }
-
-  .project-image {
-    width: 100%;
-    min-width: 200px;
-    max-width: 300px;
-    max-height: 300px;
-    /* object-fit: cover; */
-    border-radius: 2rem;
-    object-fit: contain;
-  }
-
-  .project-description {
-    flex: 1;
-    min-width: 200px;
-  }
-
-  .project-description p {
-    margin: 0 0 1rem;
-  }
 }
 
 .shadow {

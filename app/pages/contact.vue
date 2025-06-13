@@ -1,6 +1,6 @@
 <template>
-  <div class="npc-paragraph">
-    <div class="npc-box">
+  <article class="container">
+    <section class="card">
       <h2>社辦位置</h2>
       <p>宏裕科技研究大樓 B4</p>
       <p>可搭乘六教或科研電梯，往美食街告示牌方向走到底，右轉第二間即為社辦</p>
@@ -12,8 +12,8 @@
         class="address"
         value="106 臺北市大安區新生南路一段 3 號（國立臺北科技大學-宏裕科技研究大樓）B4 程式設計研究社"
       >
-    </div>
-    <div class="npc-box">
+    </section>
+    <section class="card">
       <h2>聯絡方式</h2>
       <p>Email: <a href="mailto:contact@ntut.club">contact@ntut.club</a></p>
       <p>
@@ -28,12 +28,12 @@
           target="_blank"
         >https://to.ntut.club/discord</a>
       </p>
-    </div>
-  </div>
+    </section>
+  </article>
 </template>
 
 <style scoped>
-  .address {
+.address {
   width: 100%;
   margin: 0;
   color: var(--text-color);

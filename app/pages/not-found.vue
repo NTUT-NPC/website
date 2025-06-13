@@ -1,5 +1,5 @@
 <template>
-  <div class="npc-paragraph">
+  <article class="container">
     <h1>哎呀～似乎迷路了！</h1>
     <div class="error-description">
       <p>小N 正在這裡悠哉散步，但您要找的頁面卻不在這裡。可能的原因：</p>
@@ -16,7 +16,7 @@
     >
       返回首頁
     </NuxtLink>
-  </div>
+  </article>
 
   <img
     alt="小 N 在哭"
@@ -27,7 +27,7 @@
 </template>
 
 <style scoped>
-.npc-paragraph {
+.container {
   max-width: 600px;
   padding: 0 2rem;
   h1 {
