@@ -20,7 +20,7 @@
     "@vueuse/nuxt": "13.3.0",
     "nuxt": "3.17.5",
     "postcss": "8.5.5",
-    "postcss-nesting": "13.0.2",
+    "postcss-nesting": "14.0.1",
     "radix-vue": "1.9.17",
     "unplugin-icons": "22.1.0",
     "vue": "3.5.16",
